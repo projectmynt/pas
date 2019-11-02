@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PAS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- 2018-03-02 23:59:00 -->
+<!-- "Y-m-d H:i:s" -->
+<div id="app">
+  <countdown date="2019-11-24 08:15:00"></countdown>
+</div>
+
+
+<template id="countdown-template">
+  <div class="countdown">
+    <div class="block">
+      <p class="digit">{{ days | two_digits }}</p>
+      <p class="text">Days</p>
+    </div>
+    <div class="block">
+      <p class="digit">{{ hours | two_digits }}</p>
+      <p class="text">Hours</p>
+    </div>
+    <div class="block">
+      <p class="digit">{{ minutes | two_digits }}</p>
+      <p class="text">Minutes</p>
+    </div>
+    <div class="block">
+      <p class="digit">{{ seconds | two_digits }}</p>
+      <p class="text">Seconds</p>
+    </div>
+  </div>
+</template>
+<!-- partial -->
+  <script src='https://unpkg.com/vue'></script><script  src="./script.js"></script>
+
+</body>
+</html>
